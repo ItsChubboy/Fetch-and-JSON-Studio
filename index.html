@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Astronauts</title>
+    <script>
+      window.addEventListener("load", function() {
+        fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
+          console.log(response);
+        });
+      });
+    </script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
